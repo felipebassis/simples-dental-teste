@@ -1,0 +1,14 @@
+services:
+  database:
+    image: postgres:16-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: teste_simples_dental
+      POSTGRES_PASSWORD: teste_simples_dental
+      POSTGRES_DB: simples_dental
+
+volumes:
+  postgres-data:

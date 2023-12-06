@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/simples_dental
+    username: teste_simples_dental
+    password: teste_simples_dental
+
+server:
+  servlet:
+    context-path: /api
